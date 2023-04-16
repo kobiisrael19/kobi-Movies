@@ -43,14 +43,14 @@ export default function Home() {
       <Carusel />
 
       <div className='d-flex justify-content-between align-items-center mb-5 my-1 my-lg-4'>
-        <div className='d-none d-lg-flex list-unstyled text-white px-5 ms-5 col-lg-8  col-xl-9'>
+        <div className='d-none d-lg-flex list-unstyled text-white px-5 ms-5 col-lg-8 col-xl-9'>
           <h5 className=''>Top years:</h5>
-          <p ref={yearsData} className='px-3'><Link style={{ color: 'white', textDecorationLine: 'none' }} to={`/search/${searchData || "spider-man"}/year/1989`}>1989</Link></p>
-          <p ref={yearsData} className='px-3'><Link style={{ color: 'white', textDecorationLine: 'none' }} to={`/search/${searchData || "spider-man"}/year/1995`}>1995</Link></p>
-          <p ref={yearsData} className='px-3'><Link style={{ color: 'white', textDecorationLine: 'none' }} to={`/search/${searchData || "spider-man"}/year/2000`}>2000</Link></p>
-          <p ref={yearsData} className='px-3'><Link style={{ color: 'white', textDecorationLine: 'none' }} to={`/search/${searchData || "spider-man"}/year/2020`}>2020</Link></p>
-          <p ref={yearsData} className='px-3'><Link style={{ color: 'white', textDecorationLine: 'none' }} to={`/search/${searchData || "spider-man"}/year/2021`}>2021</Link></p>
-          <p ref={yearsData} className='px-3'><Link style={{ color: 'white', textDecorationLine: 'none' }} to={`/search/${searchData || "spider-man"}/year/2023`}>2023</Link></p>
+          <p ref={yearsData} className='years_list px-3'><Link to={`/search/${searchData || "spider-man"}/year/1989`}>1989</Link></p>
+          <p ref={yearsData} className='years_list px-3'><Link to={`/search/${searchData || "spider-man"}/year/1995`}>1995</Link></p>
+          <p ref={yearsData} className='years_list px-3'><Link to={`/search/${searchData || "spider-man"}/year/2000`}>2000</Link></p>
+          <p ref={yearsData} className='years_list px-3'><Link to={`/search/${searchData || "spider-man"}/year/2020`}>2020</Link></p>
+          <p ref={yearsData} className='years_list px-3'><Link to={`/search/${searchData || "spider-man"}/year/2021`}>2021</Link></p>
+          <p ref={yearsData} className='years_list px-3'><Link to={`/search/${searchData || "spider-man"}/year/2023`}>2023</Link></p>
         </div>
         <div className='container fs-6 col-5 col-lg-3 col-xl-2'>
           <Select onChange={item => {

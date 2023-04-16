@@ -18,7 +18,7 @@ export default function Navbar() {
         <div className="input_search d-none  d-lg-flex align-items-center justify-content-center z-3 ">
           <div className="input_search d-flex justify-content-center   align-items-center col-md-11 col-lg-12" style={{ marginBottom: '5px' }}>
             <button onClick={(e)=>{navigate(`/search/${inputData.current.value}`)}} style={{ width: '50px', height: '40px', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '25px 0px 0px 25px', border: 'none' }} className=" col-2 btn btn-danger">
-              <span style={{ color: 'white', fontSize: '24px', display: 'flex' }}><HiOutlineSearch /></span>
+              <span style={{ color: 'white', fontSize: '24px', display: 'flex' }}><HiOutlineSearch  /></span>
             </button>
             <input ref={inputData} onKeyDown={(e) => {
               if (e.key == 'Enter') {
