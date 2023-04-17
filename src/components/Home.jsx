@@ -17,7 +17,7 @@ export default function Home() {
   const navigate = useNavigate();
 
   let getData = async function () {
-    let { data } = await axios.get(`http://www.omdbapi.com/?s=${searchData ? searchData : 'spider-man'}${searchYears ? '&y=' + searchYears : ''}&apikey=64dc74b3`);
+    let { data } = await axios.get(`https://www.omdbapi.com/?s=${searchData ? searchData : 'spider-man'}${searchYears ? '&y=' + searchYears : ''}&apikey=64dc74b3`);
     setData(data.Search);
     console.log(data.Search);
     setEmpty(data.Search?.length ? false : true)
